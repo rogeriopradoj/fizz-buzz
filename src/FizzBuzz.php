@@ -19,6 +19,10 @@ class FizzBuzz
                 return "Fizz";
             }
 
+            if ($item % 5 === 0) {
+                return 'Buzz';
+            }
+
             return $item;
         }, $list);
     }

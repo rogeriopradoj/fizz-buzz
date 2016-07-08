@@ -14,8 +14,8 @@ class FizzBuzzTest extends \PHPUnit_Framework_TestCase
         $this->fizzBuzz = new FizzBuzz();
     }
 
-    public function testDeterminesFizzCorrectly()
+    public function testDeterminesFizzBuzzCorrectly()
     {
-        $this->assertEquals($this->fizzBuzz->process(range(1, 5)), [1, 2, 'Fizz', 4, 5]);
+        $this->assertEquals($this->fizzBuzz->process(range(1, 5)), [1, 2, 'Fizz', 4, 'Buzz']);
     }
 }
