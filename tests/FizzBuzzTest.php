@@ -5,17 +5,27 @@ namespace FizzBuzzTests;
 use \FizzBuzz\FizzBuzz;
 
 /**
+ * Class FizzBuzzTest
+ * @package FizzBuzz
+ * @author Matthew Setter <matthew@matthewsetter.com>
  * @property FizzBuzz fizzBuzz
  */
 class FizzBuzzTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * {@inheritDoc}
+     */
     public function setUp()
     {
         $this->fizzBuzz = new FizzBuzz();
     }
 
-    /** @dataProvider listDataProvider */
-    public function testDeterminesFizzBuzzCorrectly($input, $expectedResult)
+    /**
+     * @dataProvider listDataProvider
+     * @param array $input
+     * @param array $expectedResult
+     */
+    public function testDeterminesFizzBuzzCorrectly(array $input, array $expectedResult)
     {
         $result = $this->fizzBuzz->process($input);
         $this->assertEquals(
@@ -25,7 +35,10 @@ class FizzBuzzTest extends \PHPUnit_Framework_TestCase
         );
     }
 
-    public function listDataProvider()
+    /**
+     * @return array
+     */
+    public function listDataProvider() : array
     {
         return [
             [
