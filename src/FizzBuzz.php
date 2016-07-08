@@ -16,14 +16,16 @@ class FizzBuzz
     public function process($list)
     {
         return array_map(function ($item) {
-            if ($item % 3 === 0) {
-                return 'Fizz';
+            if ($item % (3 * 5) === 0) {
+                return 'FizzBuzz';
+            } else {
+                if ($item % 3 === 0) {
+                    return 'Fizz';
+                }
+                if ($item % 5 === 0) {
+                    return 'Buzz';
+                }
             }
-
-            if ($item % 5 === 0) {
-                return 'Buzz';
-            }
-
             return $item;
         }, $list);
     }
