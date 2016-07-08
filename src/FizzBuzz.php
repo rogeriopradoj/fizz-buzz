@@ -15,6 +15,8 @@ class FizzBuzz
 
     /**
      * Runs the FizzBuzz algorithm
+     * 
+     * Inspired by reading Minimum Viable Tests by Chris Hartjes.
      *
      * @param array $list
      */
