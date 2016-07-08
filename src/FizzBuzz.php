@@ -25,13 +25,14 @@ class FizzBuzz
         return array_map(function ($item) {
             if ($item % self::MATCH_FIZZBUZZ === 0) {
                 return 'FizzBuzz';
-            } else {
-                if ($item % self::MATCH_FIZZ === 0) {
-                    return 'Fizz';
-                }
-                if ($item % self::MATCH_BUZZ === 0) {
-                    return 'Buzz';
-                }
+            }
+            
+            if ($item % self::MATCH_FIZZ === 0) {
+                return 'Fizz';
+            }
+            
+            if ($item % self::MATCH_BUZZ === 0) {
+                return 'Buzz';
             }
 
             return $item;
