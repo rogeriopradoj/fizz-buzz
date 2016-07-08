@@ -10,13 +10,14 @@ namespace FizzBuzz;
 class FizzBuzz
 {
     /**
+     * Runs the FizzBuzz algorithm
      * @param array $list
      */
     public function process($list)
     {
         return array_map(function ($item) {
             if ($item % 3 === 0) {
-                return "Fizz";
+                return 'Fizz';
             }
 
             if ($item % 5 === 0) {
