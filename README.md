@@ -7,6 +7,4 @@ I decided to create this repository after reading through [Minimum Viable Test b
 If you want to check it out and use it, just:
 
 1. Clone the repository
-2. Run `composer install`
-3. Run `phpunit`
-
+2. Run `composer test`

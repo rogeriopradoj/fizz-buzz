@@ -11,5 +11,11 @@
         "psr-4": {
             "FizzBuzzTests\\": "tests/"
         }
+    },
+    "scripts": {
+        "test": [
+            "@composer install",
+            "phpunit"
+        ]
     }
 }
